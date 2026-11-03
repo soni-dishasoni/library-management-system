@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 My Library</h1>
+        <p>Simple Library Management System</p>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Add New Book</h2>
+
+            <input type="text" id="bookTitle" placeholder="Enter book title">
+            <input type="text" id="bookAuthor" placeholder="Enter author name">
+
+            <button onclick="addBook()">Add Book</button>
+        </section>
+
+        <section class="library-section">
+            <h2>Book Collection</h2>
+
+            <input type="text" id="searchInput"
+                   placeholder="Search books..."
+                   oninput="displayBooks()">
+
+            <div id="bookList"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ by Disha</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
